@@ -1,0 +1,17 @@
+---
+- name: Download firejail package
+  get_url: url=http://sourceforge.net/projects/firejail/files/firejail/firejail-0.9.40-1.x86_64.rpm/download dest=/tmp/firejail.rpm
+  tags: install
+
+- name: Download firetools package
+  get_url: url=http://sourceforge.net/projects/firejail/files/firetools/firetools-0.9.40.1-1.x86_64.rpm dest=/tmp/firetools.rpm
+  tags: install
+
+- name: Install firejail
+  dnf: name=/tmp/firejail.rpm state=installed
+  tags: install
+
+- name: Install firetools
+  dnf: name=/tmp/firetools.rpm state=installed
+  tags: install
+

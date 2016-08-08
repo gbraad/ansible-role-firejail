@@ -1,0 +1,7 @@
+---
+- include: install.yml
+  tags:
+    - system
+    - networking
+    - firejail
+    - firejail-install
