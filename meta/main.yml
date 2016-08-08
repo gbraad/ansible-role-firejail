@@ -8,7 +8,8 @@ galaxy_info:
   platforms:
   - name: Fedora
     versions:
-    - all
+    - 23
+    - 24
   galaxy_tags:
   - web
 dependencies: []
